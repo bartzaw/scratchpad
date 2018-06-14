@@ -59,3 +59,14 @@ function maps(x){
         return x * 2});
     return doubledArr;
 }
+
+// The falling speed of petals
+
+function sakuraFall(v) {
+    if(v <= 0){
+        return 0;
+    }
+    else {
+        return 400 / v;
+    }
+}
