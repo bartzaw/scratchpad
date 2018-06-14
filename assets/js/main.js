@@ -51,3 +51,11 @@ function findNeedle(haystack) {
 function removeChar(str) {
     return str.slice(1, -1);
 }
+
+// Beginner - Lost Without a Map
+
+function maps(x){
+    var doubledArr = x.map(function(x) {
+        return x * 2});
+    return doubledArr;
+}
