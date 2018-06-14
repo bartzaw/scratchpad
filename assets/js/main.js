@@ -12,3 +12,16 @@ function solution(string) {
     return stringToArr.join("");
 }
 
+
+// Number of people in the bus
+
+var number = function(busStops){
+    var passengersNumber = 0;
+    for (var i = 0; i < busStops.length; i++) {
+        var newPassengersNumber = busStops[i][0] - busStops[i][1];
+        passengersNumber = passengersNumber + newPassengersNumber;
+    }
+    return passengersNumber;
+}
+
+
