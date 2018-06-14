@@ -31,3 +31,10 @@ class SmallestIntegerFinder {
         return Math.min.apply(Math, args)
     }
 }
+
+// Convert a string to an array
+
+function stringToArray(string){
+    return string.split(' ');
+}
+
