@@ -45,3 +45,9 @@ function findNeedle(haystack) {
         if (haystack[i] === 'needle') return 'found the needle at position ' + i;
     }
 }
+
+// Remove First and Last Character
+
+function removeChar(str) {
+    return str.slice(1, -1);
+}
