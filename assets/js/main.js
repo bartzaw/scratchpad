@@ -24,4 +24,10 @@ var number = function(busStops){
     return passengersNumber;
 }
 
+// Find the smallest integer in the array
 
+class SmallestIntegerFinder {
+    findSmallestInt(args) {
+        return Math.min.apply(Math, args)
+    }
+}
