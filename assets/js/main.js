@@ -190,3 +190,9 @@ function squareDigits(num){
 function noSpace(x){
     return x.replace(/\s/g,'');
 }
+
+// String repeat
+
+function repeatStr (n, s) {
+    return s.repeat(n);
+}
