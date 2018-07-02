@@ -217,3 +217,9 @@ function even_or_odd(number) {
     number = (number % 2 === 0) ? "Even" : "Odd";
     return number;
 }
+
+// Opposite number
+
+function opposite(number) {
+    return number*-1;
+}
