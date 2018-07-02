@@ -136,3 +136,14 @@ function makeNegative(num) {
     }
     return num
 }
+
+// Sum of positive
+
+function positiveSum(arr) {
+    for (var i = 0; i < arr.length;i++) {
+        if (arr[i] < 0 || isNaN(arr[i])) {
+            arr[i]= 0;
+        }
+    }
+    return arr.reduce(function(prev,curr){return prev + curr;},0);
+}
