@@ -196,3 +196,24 @@ function noSpace(x){
 function repeatStr (n, s) {
     return s.repeat(n);
 }
+
+// Factorial
+
+function factorial(n) {
+
+    var nval = 1;
+    if (n < 0 || n > 12) {
+        throw new RangeError('Value must be smaller than ' + 12 + ' and larger than ' + 0);}
+    for(var i = 2; i<=n; i++) {
+
+        nval = nval*i;
+    }
+    return nval;
+};
+
+// Even or Odd
+
+function even_or_odd(number) {
+    number = (number % 2 === 0) ? "Even" : "Odd";
+    return number;
+}
