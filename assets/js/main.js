@@ -96,4 +96,19 @@ function greet(name){
     return (name === 'Johnny' ? "Hello, my love!" : "Hello, " + name + "!")
 }
 
+// Sum without highest and lowest number
+
+function sumArray(array) {
+    if (array === null || !isNaN(array)) {
+        return 0
+    }else{
+        var min = Math.min.apply(Math, array)
+        var max = Math.max.apply(Math, array)
+        var total = 0
+        for (var i = 0; i < array.length;i++) {
+            total += array[i]
+        }
+        return eval(total - min - max)
+    }
+}
 
