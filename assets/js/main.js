@@ -147,3 +147,13 @@ function positiveSum(arr) {
     }
     return arr.reduce(function(prev,curr){return prev + curr;},0);
 }
+
+// Counting sheep...
+
+function countSheeps(arrayOfSheep) {
+    var counter = 0;
+    for (var i = 0; i < arrayOfSheep.length;i++) {
+        arrayOfSheep[i] ? counter++ : false;
+    }
+    return counter
+}
