@@ -184,3 +184,9 @@ function squareDigits(num){
     }
     return Number(results.join(''));
 }
+
+// Remove String Spaces
+
+function noSpace(x){
+    return x.replace(/\s/g,'');
+}
