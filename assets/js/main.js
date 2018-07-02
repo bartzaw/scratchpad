@@ -157,3 +157,17 @@ function countSheeps(arrayOfSheep) {
     }
     return counter
 }
+
+// String cleaning
+
+function stringClean(str){
+
+    var cleanStr = '';
+    for (var i = 0; i < str.length;i++) {
+        if (isNaN(str[i]) || str[i]===" " || str[i] ==="''") {
+            cleanStr += str[i];
+        }
+    }
+
+    return cleanStr
+}
