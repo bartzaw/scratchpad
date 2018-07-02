@@ -127,3 +127,12 @@ function getAverage(marks){
     }
     return Math.floor(average/marks.length)
 }
+
+// Return Negative
+
+function makeNegative(num) {
+    if (num > 0) {
+        return num*-1;
+    }
+    return num
+}
