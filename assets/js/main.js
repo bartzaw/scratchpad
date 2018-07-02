@@ -118,3 +118,12 @@ function digitize(n) {
     return n.toString().split('').reverse().map(Number);
 }
 
+// Get the mean of an array
+
+function getAverage(marks){
+    var average = 0;
+    for (var i = 0; i < marks.length;i++) {
+        var average = marks[i] + average;
+    }
+    return Math.floor(average/marks.length)
+}
