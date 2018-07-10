@@ -270,3 +270,19 @@ function findOdd(A) {
         }
     }
 }
+
+// Your order, please
+
+function order(words){
+    var result = [];
+    var num = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
+    var string = words.split(" ");
+    for (var i = 0; i < num.length; i++) {
+        for (var j = 0; j < string.length; j++) {
+            if (string[j].includes(num[i])) {
+                result.push(string[j]);
+            }
+        }
+    }
+    return result.join(" ");
+}
