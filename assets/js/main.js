@@ -24,14 +24,6 @@ var number = function(busStops){
     return passengersNumber;
 }
 
-// Find the smallest integer in the array
-
-class SmallestIntegerFinder {
-    findSmallestInt(args) {
-        return Math.min.apply(Math, args)
-    }
-}
-
 // Convert a string to an array
 
 function stringToArray(string){
@@ -241,4 +233,17 @@ function isValidWalk(walk) {
         y: possibleDirections['e'] - possibleDirections['w']
     }
     return walk.length === 10 && displacement.x === 0 && displacement.y === 0;
+}
+
+// Equal Sides Of An Array
+
+function findEvenIndex(arr){
+    for(i = 1; i < arr.length-1; i++){
+        var left = arr.slice(0,i).reduce((a,b) => a + b)
+        var right = arr.slice(i+1).reduce((a,b) => a+b)
+        if(left === right){
+            return i
+        }
+    }
+    return -1
 }
