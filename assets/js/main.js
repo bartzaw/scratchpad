@@ -254,3 +254,19 @@ function spinWords(string){
     return string.split(' ')
         .map(word => {return word.length > 4 ? word.split('').reverse().join('') : word;
 }).join(' ');}
+
+// Find the odd int
+
+function findOdd(A) {
+    var counter = 0;
+    for(var i = 0; i < A.length; i++) {
+        for(var j = 0; j < A.length; j++) {
+            if(A[i] == A[j]) {
+                counter++;
+            }
+        }
+        if (counter % 2 !== 0) {
+            return A[i];
+        }
+    }
+}
