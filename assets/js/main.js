@@ -223,3 +223,22 @@ function even_or_odd(number) {
 function opposite(number) {
     return number*-1;
 }
+
+// Take a Ten Minute Walk
+
+function isValidWalk(walk) {
+    var possibleDirections = {
+        'n': 0,
+        's': 0,
+        'e': 0,
+        'w': 0
+    }
+    walk.forEach(function(direction) {
+        possibleDirections[direction]++;
+    })
+    var displacement = {
+        x: possibleDirections['n'] - possibleDirections['s'],
+        y: possibleDirections['e'] - possibleDirections['w']
+    }
+    return walk.length === 10 && displacement.x === 0 && displacement.y === 0;
+}
