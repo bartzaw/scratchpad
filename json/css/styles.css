@@ -20,5 +20,5 @@
 }
 
 .hide-me {
-    display: none;
+    visibility: hidden;
 }
