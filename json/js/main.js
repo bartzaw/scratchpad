@@ -1,13 +1,16 @@
+var pageCounter = 1;
 var animalContainer = document.getElementById('animal-info');
 var btn = document.getElementById('btn');
 btn.addEventListener('click', function() {
     var theRequest = new XMLHttpRequest();
-    theRequest.open('GET','https://learnwebcode.github.io/json-example/animals-1.json');
+    theRequest.open('GET','https://learnwebcode.github.io/json-example/animals-' + pageCounter + '.json');
     theRequest.onload = function() {
         var myData = JSON.parse(theRequest.responseText);
         renderHTML(myData);
     };
     theRequest.send();
+    pageCounter++;
+
 });
 
 function renderHTML(data) {
